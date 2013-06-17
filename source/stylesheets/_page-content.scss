@@ -16,9 +16,16 @@
 	}
 
 	.page-content__header {
+		margin-top: -20px;
 		background: $contentBackgroundColor;
+		h1 {
+			margin-top: $column-gutter;
+			strong {
+				color: $secondaryColor;
+			}
+		}
 		img {
-			margin-top: 50px;
+			margin-top: $column-gutter;
 			margin-bottom: -3px;
 		}
 	}
