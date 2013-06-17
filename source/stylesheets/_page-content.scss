@@ -16,6 +16,7 @@
 	}
 
 	.page-content__header {
+		background: $contentBackgroundColor;
 		img {
 			margin-top: 50px;
 			margin-bottom: -3px;
@@ -25,10 +26,30 @@
 	.page-content__signup {
 		background-color: $white;
 		border-top: 1px solid $contentBorderColor;
+		border-bottom: 1px solid $contentBorderColor;
 		@include single-box-shadow(rgba(0,0,0,0.1), 0px, -5px, 15px, 0px, false);
 		.button {
-			margin-top: 30px;
+			margin-top: 2*$column-gutter;
 			margin-bottom: 30px;
+		}
+
+		.arrow-movedown {
+			position: relative;
+		    top: 38px;
+		    z-index: 10;
+		}
+	}
+
+	.page-content__uspblock_cloud {
+		background: $contentBackgroundColor;
+
+		.row {
+			max-width: 1280px;
+			margin-left: auto;
+			margin-right: auto;
+
+			margin-top: 3*$column-gutter;
+			margin-bottom: 3*$column-gutter;
 		}
 	}
 
