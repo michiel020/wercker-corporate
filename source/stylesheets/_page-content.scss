@@ -47,9 +47,7 @@
 		}
 	}
 
-	.page-content__uspblock_cloud {
-		background: $contentBackgroundColor;
-
+	%uspblock {
 		.row {
 			max-width: 1280px;
 			margin-left: auto;
@@ -58,6 +56,30 @@
 			margin-top: 3*$column-gutter;
 			margin-bottom: 3*$column-gutter;
 		}
+		border-bottom: 1px solid $contentBorderColor;
+	}
+
+	.page-content__uspblock_cloud {
+		@extend %uspblock;
+		background: $contentBackgroundColor;
+
+	}
+
+	.page-content__uspblock_integrated {
+		@extend %uspblock;
+		background: #fcb543;
+		color: $white;
+		h2 {color: $white;}
+	}
+
+	.page-content__uspblock_social {
+		@extend %uspblock;
+		background: #ebeef3;
+	}
+
+	.page-content__uspblock_responsive {
+		@extend %uspblock;
+		background: #f6f6f6;
 	}
 
 }
