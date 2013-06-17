@@ -27,6 +27,13 @@
 		img {
 			margin-top: $column-gutter;
 			margin-bottom: -3px;
+
+			position: relative;
+
+			-webkit-animation: movein 2s ease-in-out;
+			-moz-animation: movein 2s ease-in-out;
+		    -webkit-animation-fill-mode: forwards;
+		    -moz-animation-fill-mode: forwards;
 		}
 	}
 
@@ -42,8 +49,11 @@
 
 		.arrow-movedown {
 			position: relative;
-		    top: 38px;
-		    z-index: 10;
+		 	z-index: 10;
+		 	top: 38px;
+
+		 	-webkit-animation: pulsate 1.5s ease-in-out infinite;
+			-moz-animation: pulsate 1.5s ease-in-out infinite;
 		}
 	}
 
@@ -57,6 +67,10 @@
 			margin-bottom: 3*$column-gutter;
 		}
 		border-bottom: 1px solid $contentBorderColor;
+
+		h2 {
+			@include opacity(0.9);
+		}
 	}
 
 	.page-content__uspblock_cloud {
@@ -81,5 +95,11 @@
 		@extend %uspblock;
 		background: #f6f6f6;
 	}
-
+	.page-content__uspblock_end {
+		@extend %uspblock;
+		background: #677a9b;
+		color: $white;
+		h2,h3 {color: $white;}
+		h2{margin-top: $column-gutter;}
+	}
 }

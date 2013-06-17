@@ -1,0 +1,21 @@
+@-moz-keyframes pulsate {
+    0% {top: 30px;}
+    50% {top: 45px;}
+    100% {top: 30px;}
+}
+
+@-webkit-keyframes pulsate {
+    0% {top: 30px;}
+    50% {top: 45px;}
+    100% {top: 30px;}
+}
+
+@-webkit-keyframes movein {
+    0%   {-webkit-transform: translate3d(0,200px,0);}
+    100% {-webkit-transform: translate3d(0,0,0);}
+}
+
+@-moz-keyframes movein {
+    0%   {bottom:-200px;}
+    100% {bottom:0;}
+}
