@@ -1,7 +1,7 @@
 ###
 # Compass
 ###
-
+require "zurb-foundation"
 # Susy grids in Compass
 # First: gem install susy
 # require 'susy'
@@ -18,7 +18,7 @@
 # Per-page layout changes:
 #
 # With no layout
-# page "/path/to/file.html", :layout => false
+page "/index.html", :layout => false
 #
 # With alternative layout
 # page "/path/to/file.html", :layout => :otherlayout
