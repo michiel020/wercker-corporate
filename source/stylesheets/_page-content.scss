@@ -50,7 +50,8 @@
 		.arrow-movedown {
 			position: relative;
 		 	z-index: 10;
-		 	top: 38px;
+		 	margin-bottom: 2.5*$column-gutter;
+		 	top: 25px;
 
 		 	-webkit-animation: pulsate 1.5s ease-in-out infinite;
 			-moz-animation: pulsate 1.5s ease-in-out infinite;
@@ -63,8 +64,8 @@
 			margin-left: auto;
 			margin-right: auto;
 
-			margin-top: 3*$column-gutter;
-			margin-bottom: 3*$column-gutter;
+			margin-top: 4*$column-gutter;
+			margin-bottom: 4*$column-gutter;
 		}
 		border-bottom: 1px solid $contentBorderColor;
 
