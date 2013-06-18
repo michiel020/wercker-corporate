@@ -1,7 +1,7 @@
 // Global Foundation Settings
 @import "compass";
 @import "settings";
-
+@import "foundation/components/grid";
 
 // Mixins
 @import "mixins/fontFace";
@@ -15,6 +15,8 @@
 @import "foundation";
 @import "highlight";
 @import "fontCustom";
+
+
 
 // Comment out this import if you are customizing you imports below
 
@@ -33,7 +35,7 @@ body {
 
 // @import "foundation/foundation-global"; // *always required
 // @import "foundation/components/global"; // *always required
-// @import "foundation/components/grid";
+
 // @import "foundation/components/visibility";
 // @import "foundation/components/block-grid";
 // @import "foundation/components/type";
