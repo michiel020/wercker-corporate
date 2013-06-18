@@ -1,9 +1,7 @@
 // Global Foundation Settings
-@import "fontCustom";
 @import "compass";
 @import "settings";
 
-@import "foundation";
 
 // Mixins
 @import "mixins/fontFace";
@@ -14,8 +12,9 @@
 @import "navigation";
 @import "footer";
 @import "animations";
-
+@import "foundation";
 @import "highlight";
+@import "fontCustom";
 
 // Comment out this import if you are customizing you imports below
 
