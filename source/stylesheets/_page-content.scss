@@ -10,31 +10,76 @@
 
 .page-content {
 
+
 	.row {
 		margin-left: 0;
 		margin-right: 0;
 	}
 
 	.page-content__header {
-		margin-top: -20px;
-		background: $contentBackgroundColor;
+		background: #ebeef3;
+
+		.header_img_holder {
+			margin-left: auto;
+			margin-right: auto;
+			background-size: 100% 100%;
+
+			max-width: 300px;
+			background-image: image-url("phone.jpg");
+
+
+			&:after {
+				content: "";
+				padding-top: (1088/762)*100%;
+				display: block;
+			}
+
+			position: relative;
+			-webkit-animation: movein 2s ease-out, fadein 2s ease-in-out;;
+			-moz-animation: movein 2s ease-out, fadein 2s ease-in-out;;
+		    -webkit-animation-fill-mode: forwards, forwards;
+		    -moz-animation-fill-mode: forwards, forwards;
+		}
+
+		@media #{$small} {
+			margin-top: -$column-gutter;
+			.header_img_holder {
+				max-width: 600px;
+				background-image: image-url("tablet.jpg");
+
+				&:after {
+					content: "";
+					padding-top: (814/870)*100%;
+					display: block;
+					@include opacity(0);
+				}
+
+			}
+		}
+
+		@media #{$medium} {
+			margin-top: -$column-gutter;
+			.header_img_holder {
+				max-width: 1200px;
+				background-image: image-url("laptop.jpg");
+
+				&:after {
+					content: "";
+					padding-top: (622/1320)*100%;
+					display: block;
+					@include opacity(0);
+				}
+			}
+		}
+
 		h1 {
 			margin-top: $column-gutter;
 			strong {
 				color: $secondaryColor;
 			}
 		}
-		img {
-			margin-top: $column-gutter;
-			margin-bottom: -3px;
 
-			position: relative;
 
-			-webkit-animation: movein 2s ease-in-out;
-			-moz-animation: movein 2s ease-in-out;
-		    -webkit-animation-fill-mode: forwards;
-		    -moz-animation-fill-mode: forwards;
-		}
 	}
 
 	.page-content__signup {
@@ -68,6 +113,8 @@
 			margin-bottom: 4*$column-gutter;
 		}
 		border-bottom: 1px solid $contentBorderColor;
+		padding-left: 2*$column-gutter;
+		padding-right: 2*$column-gutter;
 
 		h2 {
 			@include opacity(0.9);
@@ -77,7 +124,6 @@
 	.page-content__uspblock_cloud {
 		@extend %uspblock;
 		background: $contentBackgroundColor;
-
 	}
 
 	.page-content__uspblock_integrated {
@@ -102,5 +148,9 @@
 		color: $white;
 		h2,h3 {color: $white;}
 		h2{margin-top: $column-gutter;}
+
+		.columns {
+			padding-left: 2*$column-gutter;
+		}
 	}
 }
