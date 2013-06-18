@@ -28,6 +28,14 @@
 	.page-content__header {
 		background: #ebeef3;
 
+		h1 {
+			margin-top: $column-gutter;
+			margin-bottom: 0;
+			strong {
+				color: $secondaryColor;
+			}
+		}
+
 		.header_img_holder {
 			margin-left: auto;
 			margin-right: auto;
@@ -52,6 +60,9 @@
 
 		@media #{$small} {
 			margin-top: -$column-gutter;
+
+			h1 {margin-bottom: $column-gutter;}
+
 			.header_img_holder {
 				max-width: 600px;
 				background-image: image-url("tablet.jpg");
@@ -68,6 +79,9 @@
 
 		@media #{$medium} {
 			margin-top: -$column-gutter;
+
+			h1 {margin-bottom: 0;}
+
 			.header_img_holder {
 				max-width: 1200px;
 				background-image: image-url("laptop.jpg");
@@ -81,14 +95,10 @@
 			}
 		}
 
-		h1 {
-			margin-top: $column-gutter;
-			margin-bottom: 0;
-			strong {
-				color: $secondaryColor;
-			}
+		@media #{$large} {
+			margin-top: -$column-gutter;
+			h1 {margin-bottom: $column-gutter;}
 		}
-
 
 	}
 
