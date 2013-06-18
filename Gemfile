@@ -11,4 +11,4 @@ gem "zurb-foundation", "4.1.2"
 gem "redcarpet"
 gem "compass"
 gem "kramdown"
-
+gem "unicorn"
