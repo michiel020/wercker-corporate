@@ -148,19 +148,13 @@
 
 	.page-content__uspblock_velocity {
 		@extend %uspblock;
-		background: $contentBackgroundColor;
-
-	    &:before {
-	        @extend [class^="icon-"]:before;
-	        @extend .icon-deploy-finished:before;
-	        font-size: 1200px;
-	        position: absolute;
-	        color: #ededed;
-	        left: 20%;
-	        right: 20%;
-	        top: -100px;
-
-	    }
+		background: #00ad73
+		margin-bottom: 0;
+		.row {
+			position: relative;
+		}
+		color: $white;
+		h2 {color: $white;}
 	}
 
 	.page-content__uspblock_cloud {
