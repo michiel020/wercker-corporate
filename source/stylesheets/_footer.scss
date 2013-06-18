@@ -30,7 +30,9 @@
 	}
 
 	.footer__block {
-		h5 {text-transform: uppercase;}
+		h5 {
+			text-transform: uppercase;
+		}
 		p {font-size: .8*$base-font-size;}
 		padding: 20px;
 	}
