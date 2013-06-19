@@ -68,7 +68,7 @@
 		@media #{$small} {
 			margin-top: -$column-gutter;
 
-			h1 {margin-bottom: $column-gutter;}
+			h3 {margin-bottom: $column-gutter;}
 
 			.header_img_holder {
 				max-width: 600px;
@@ -104,7 +104,7 @@
 
 		@media #{$large} {
 			margin-top: -$column-gutter;
-			h1 {margin-bottom: $column-gutter;}
+			h3 {margin-bottom: $column-gutter;}
 		}
 
 	}
@@ -148,7 +148,7 @@
 
 	.page-content__uspblock_velocity {
 		@extend %uspblock;
-		background: #313030;
+		background: #3a3535;
 		margin-bottom: 0;
 		.row {
 			position: relative;
@@ -181,6 +181,11 @@
 		h2 {color: $white;}
 	}
 
+	.page-content__uspblock_languages {
+		@extend %uspblock;
+		background: #f6f6f6;
+	}
+
 	.page-content__uspblock_social {
 		@extend %uspblock;
 		background: #ebeef3;
@@ -190,6 +195,7 @@
 		@extend %uspblock;
 		background: #f6f6f6;
 		margin-bottom: 0;
+
 		.row {
 			position: relative;
 		}
