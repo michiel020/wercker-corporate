@@ -41,6 +41,9 @@
     50%{
         -webkit-transform: rotate(100deg);
     }
+    75%{
+        -webkit-transform: rotate(80deg);
+    }
     100%{
         -webkit-transform: rotate(25deg);
     }
@@ -55,6 +58,9 @@
     }
     50%{
         -moz-transform: rotate(100deg);
+    }
+    75%{
+        -moz-transform: rotate(80deg);
     }
     100%{
         -moz-transform: rotate(25deg);

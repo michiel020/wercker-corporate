@@ -224,12 +224,21 @@
 
 	.page-content__uspblock_languages {
 		@extend %uspblock;
+		.row {
+			max-width: 640px;
+			float: right;
+		}
+		float: right;
 		background: $white;
-		.row {padding-left: 0;}
 	}
 
 	.page-content__uspblock_social {
 		@extend %uspblock;
+		.row {
+			max-width: 640px;
+			float: left;
+			padding-left: 2*$column-gutter;
+		}
 		background: #ebeef3;
 	}
 
