@@ -33,36 +33,36 @@
 
 @-webkit-keyframes rotating {
     0%{
-        -webkit-transform: rotate(25deg);
+        -webkit-transform: rotate(-90deg);
     }
     25%{
-        -webkit-transform: rotate(-20deg);
+        -webkit-transform: rotate(90deg);
     }
     50%{
-        -webkit-transform: rotate(100deg);
+        -webkit-transform: rotate(50deg);
     }
     75%{
-        -webkit-transform: rotate(80deg);
+        -webkit-transform: rotate(70deg);
     }
     100%{
-        -webkit-transform: rotate(25deg);
+        -webkit-transform: rotate(-90deg);
     }
 }
 
 @-moz-keyframes rotating {
     0%{
-        -moz-transform: rotate(25deg);
+        -moz-transform: rotate(-90deg);
     }
     25%{
-        -moz-transform: rotate(-20deg);
+        -moz-transform: rotate(90deg);
     }
     50%{
-        -moz-transform: rotate(100deg);
+        -moz-transform: rotate(50deg);
     }
     75%{
-        -moz-transform: rotate(80deg);
+        -moz-transform: rotate(70deg);
     }
     100%{
-        -moz-transform: rotate(25deg);
+        -moz-transform: rotate(-90deg);
     }
 }

@@ -167,6 +167,15 @@
 		.velocity_image {
 			.velocity_meter {
 				width: auto;
+
+				@media #{$small} {
+					margin-top: 5*$column-gutter;
+				}
+
+				@media #{$medium} {
+					margin-top: 1.5*$column-gutter;
+				}
+
 			}
 
 			.velocity_pointer {
@@ -176,8 +185,8 @@
 				bottom: -150px;
 				@include rotate(-90deg);
 
-				-webkit-animation: rotating 4s ease-in-out infinite;
-				-moz-animation: rotating 4s ease-in-out infinite;
+				-webkit-animation: rotating 6s ease-in-out infinite;
+				-moz-animation: rotating 6s ease-in-out infinite;
 
 			}
 		}
