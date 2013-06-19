@@ -207,7 +207,9 @@
 
 		.integration_velocity {
 		    text-align:center;
-			img {	display: inline-block;	}
+			img {
+				display: inline-block;
+			}
 			@media #{$small} {
 				img {
 					display: block;
