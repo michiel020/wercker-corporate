@@ -33,6 +33,10 @@
 		h5 {
 			text-transform: uppercase;
 		}
+		.icon {
+			font-size: 0.9em;
+			vertical-align: top;
+		}
 		p {font-size: .8*$base-font-size;}
 		padding: 20px;
 	}
@@ -42,7 +46,7 @@
 	}
 
 	.badge img {
-		margin-top: 1.5*$column-gutter;
+		margin-top: 2*$column-gutter;
 	}
 	@extend .footer__bar;
 }

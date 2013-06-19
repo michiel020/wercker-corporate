@@ -148,7 +148,7 @@
 
 	.page-content__uspblock_velocity {
 		@extend %uspblock;
-		background: #00ad73;
+		background: #313030;
 		margin-bottom: 0;
 		.row {
 			position: relative;
@@ -215,17 +215,28 @@
 		h2,h3 {color: $white;}
 		h2{margin-top: $column-gutter;}
 
+		.row {
+			margin-top: 0;
+		}
+
 		.columns {
+			margin-top: 2*$column-gutter;
 			padding-left: 2*$column-gutter;
 			text-align: center;
+			p {
+				text-align: left;
+				color: rgba(255,255,255,.75);
+			}
+
+			a {
+				color: rgba(255,255,255,0.75);
+				text-decoration: underline;
+				text-align: left;
+			}
+
+			a:hover { color: rgba(255,255,255,1);}
 		}
 
-		a {
-			color: rgba(255,255,255,0.75);
-			text-decoration: underline;
-		}
-
-		a:hover { color: rgba(255,255,255,1);}
 
 	}
 }
