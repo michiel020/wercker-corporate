@@ -43,6 +43,10 @@
 			}
 		}
 
+		h3{
+			color: rgba(0,0,0,0.75)
+		}
+
 		.header_img_holder {
 			margin-left: auto;
 			margin-right: auto;
@@ -59,10 +63,14 @@
 			}
 
 			position: relative;
-			-webkit-animation: movein 2s ease-out, fadein 2s ease-in-out;;
-			-moz-animation: movein 2s ease-out, fadein 2s ease-in-out;;
-		    -webkit-animation-fill-mode: forwards, forwards;
-		    -moz-animation-fill-mode: forwards, forwards;
+			-webkit-animation: fadein 2s ease-in-out;;
+			-moz-animation:  fadein 2s ease-in-out;;
+		    -webkit-animation-fill-mode: forwards;
+		    -moz-animation-fill-mode: forwards;
+			// -webkit-animation: movein 2s ease-out, fadein 2s ease-in-out;;
+			// -moz-animation: movein 2s ease-out, fadein 2s ease-in-out;;
+		 //    -webkit-animation-fill-mode: forwards, forwards;
+		 //    -moz-animation-fill-mode: forwards, forwards;
 		}
 
 		@media #{$small} {
@@ -125,6 +133,7 @@
 		background-color: $white;
 		padding-top: 2*$column-gutter;
 		padding-bottom: 3*$column-gutter;
+		border-top: 1px solid $secondaryColor;
 
 		h3 {margin-bottom: $column-gutter}
 	}
@@ -136,8 +145,9 @@
 			margin-right: auto;
 			margin-top: 4*$column-gutter;
 			padding-bottom: 4*$column-gutter;
+			padding-left: $column-gutter;
+			padding-right: $column-gutter;
 		}
-		border-bottom: 1px solid $contentBorderColor;
 
 		h2 {
 			@include opacity(0.8);
@@ -150,11 +160,27 @@
 		@extend %uspblock;
 		background: #3a3535;
 		margin-bottom: 0;
-		.row {
-			position: relative;
-		}
 		color: $white;
 		h2 {color: $white;}
+		@include background-image(linear-gradient(top, #221f1f 0%, $black 100%));
+
+		.velocity_image {
+			.velocity_meter {
+				width: auto;
+			}
+
+			.velocity_pointer {
+				position: absolute;
+				left: 50%;
+				margin-left: -8px;
+				bottom: -150px;
+				@include rotate(-90deg);
+
+				-webkit-animation: rotating 4s ease-in-out infinite;
+				-moz-animation: rotating 4s ease-in-out infinite;
+
+			}
+		}
 	}
 
 	.page-content__uspblock_cloud {
@@ -164,12 +190,11 @@
 	    &:before {
 	        @extend [class^="icon-"]:before;
 	        @extend .icon-deploy-finished:before;
-	        font-size: 1200px;
+	        font-size: 1000px;
 	        position: absolute;
 	        color: #ededed;
-	        left: 20%;
-	        right: 20%;
-	        top: -100px;
+	        right: 10%;
+	        top: -150px;
 
 	    }
 	}
@@ -179,11 +204,26 @@
 		background: #fcb543;
 		color: $white;
 		h2 {color: $white;}
+
+		.integration_velocity {
+		    text-align:center;
+			img {	display: inline-block;	}
+			@media #{$small} {
+				img {
+					display: block;
+					max-width: 80%;
+					margin-left: auto;
+					margin-right: auto;
+				}
+			}
+
+		}
 	}
 
 	.page-content__uspblock_languages {
 		@extend %uspblock;
-		background: #f6f6f6;
+		background: $white;
+		.row {padding-left: 0;}
 	}
 
 	.page-content__uspblock_social {
@@ -203,7 +243,7 @@
 		@media #{$small} {
 			.page-content__uspblock__image {
 				position: absolute;
-				width: gridCalc(8, 12);
+				width: gridCalc(7, 12);
 			}
 		}
 
@@ -220,6 +260,7 @@
 		color: $white;
 		h2,h3 {color: $white;}
 		h2{margin-top: $column-gutter;}
+		h3{margin-bottom: $column-gutter;}
 
 		.row {
 			margin-top: 0;

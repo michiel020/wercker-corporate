@@ -14,6 +14,17 @@
 		margin-left: 10px;
 		font-size: .7*$base-font-size;
 		text-transform: uppercase;
+
+		a {
+			vertical-align: bottom;
+			@include opacity(0.5);
+			@include transition-property(opacity);
+			@include transition-duration(0.2s);
+
+			&:hover {
+				@include opacity(1);
+			}
+		}
 	}
 }
 
@@ -50,6 +61,7 @@
 	}
 	@extend .footer__bar;
 }
+
 
 #footer {
 	@extend .footer;
