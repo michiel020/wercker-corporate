@@ -107,6 +107,20 @@
 			h3 {margin-bottom: $column-gutter;}
 		}
 
+
+		.page-content__header__carousel {
+			position: relative;
+			max-width: 1200px;
+			margin: {
+				left: auto;
+				right: auto;
+			}
+			.header-slideshow {
+			top: 30px;
+			left:64px;
+				position: absolute;
+			}
+		}
 		.header-slideshow {
 
 			.orbit-container {
@@ -128,6 +142,12 @@
 				li {
 					float: none;
 					display: inline-block;
+					background: $white;
+					border-color: $secondaryColor;
+					&.active {
+						background: $secondaryColor;
+						border-color: transparent;
+					}
 				}
 			}
 
