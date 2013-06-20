@@ -36,6 +36,8 @@
   <script src="/javascripts/lib/foundation/foundation.js"></script>
   <script src="/javascripts/lib/foundation/foundation.topbar.js"></script>
   <script src="/javascripts/lib/foundation/foundation.section.js"></script>
+  <script src="/javascripts/lib/foundation/foundation.orbit.js"></script>
+
 
   <script>
     $(function(){
@@ -77,14 +79,31 @@
       </div>
 
 
-      <div class="page-content">
+      <div class="row page-content">
 		<div class="small-12 large-12 columns text-center page-content__header">
 			<img class="logo-header" src="images/logo_header.png" alt="wercker" width="65px"/>
 			<h1>The open <strong>delivery platform</strong></h1>
-      <h3>Test and deploy your applications in a hassle-free way. <strong>Together.</strong></h3>
+		    <h3>Test and deploy your applications in a hassle-free way. <strong>Together.</strong></h3>
 			<div class="arrow-movedown show-for-large"><img src="images/move_down@2x.png" alt="move down" width="77px"/></div>
 			<div class="arrow-movedown show-for-small"><img src="images/move_down@2x.png" alt="move down" width="77px"/></div>
-			<div class="header_img_holder"></div>
+
+			<div class="header_img_holder">
+			</div>
+
+			<div class="row header-slideshow show-for-large-up">
+				<ul data-orbit>
+				  <li>
+				    <img src="images/screenshot.jpg" />
+				  </li>
+				  <li>
+				    <img src="images/screenshot.jpg" />
+				  </li>
+				  <li>
+				    <img src="images/screenshot.jpg" />
+				  </li>
+				</ul>
+			</div>
+
 		</div>
 
 		<div class="small-12 large-12 columns text-center page-content__signup">
@@ -134,7 +153,7 @@
 				<div class="small-12 large-5 columns">
 					<h2>Integrated</h2>
 					<p>
-						wercker integrates with your favorite developer platforms out there such as GitHub and Bitbucket for your version control.
+						Wercker integrates with your favorite developer platforms out there such as GitHub and Bitbucket for your version control.
 					</p>
 					<p>
 						When you are ready to deploy your application, we allow you to do so to cloud platforms like Heroku and Amazon Web Services
@@ -152,13 +171,13 @@
 	    <div class="small-12 large-12 columns page-content__uspblock_terminalpower">
 	      <div class="row">
 
-	        <div class="small-12 large-7 columns">
-
+	        <div class="small-12 large-6 columns">
+				<img src="images/cli.jpg" alt="wercker cli" width="500px"/>
 	        </div>
-	        <div class="small-12 large-5 columns">
+	        <div class="small-12 large-6 columns">
 	          <h2>Terminal Power</h2>
 	          <p>
-	            wercker integrates with your favorite developer platforms out there such as GitHub and Bitbucket for your version control.
+	            Wercker integrates with your favorite developer platforms out there such as GitHub and Bitbucket for your version control.
 	          </p>
 	          <p>
 	            When you are ready to deploy your application, we allow you to do so to cloud platforms like Heroku and Amazon Web Services
@@ -171,10 +190,11 @@
 		<div class="small-12 large-6 columns page-content__uspblock_languages">
 			<div class="row">
 				<div class="small-12 large-12 right columns">
-					<h2>Programming environments</h2>
+					<h2>Programming Environments</h2>
 		    	        <p>
 			            Wercker offers support for Node.js, Python and Ruby but we're working hard on adding other languages.
 						</p>
+						<img src="images/languages.jpg" alt="Supported languages" width="320px"/>
 			     		<p>
 			            Wercker also allows you to test your code and interact with popular services such as Redis and MongoDB but also RabbitMQ and of course MySQL and Postgres.
 					</p>
@@ -302,8 +322,9 @@
             <li><a href="http://beta.wercker.com/jobs">jobs</a></li>
             <li><a href="http://mailto:pleasemailus@wercker.com">contact &amp; support</a></li>
             <li class="footer__label"><span>find us on: </span></li>
-	        <li><a href="https://twitter.com/wercker"><img src="/images/icon_twitter.png" alt="twitter" width="20"/></a></li>
-	        <li><a href="https://facebook.com/wercker"><img src="/images/icon_facebook.png" alt="facebook" width="20"/></a></li>
+	        <li><a href="https://angel.co/wercker"><img src="/images/icon_angellist.jpg" alt="twitter" width="80"/></a></li>
+	        <li><a href="https://twitter.com/wercker"><img src="/images/icon_twitter.jpg" alt="twitter" width="20"/></a></li>
+	        <li><a href="https://facebook.com/wercker"><img src="/images/icon_facebook.jpg" alt="facebook" width="20"/></a></li>
           </ul>
         </div>
       </div>

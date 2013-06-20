@@ -38,11 +38,12 @@
 			text-align: center;
 		}
 
-		img {
+		a {
+			display: block;
+			line-height: 1.5em;
 			margin: {
 				left: $column-gutter;
 				top: 0.75*$column-gutter;
-				bottom: 0.75*$column-gutter;
 			}
 		}
 	}

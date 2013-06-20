@@ -10,7 +10,6 @@
 
 .page-content {
 
-
 	.row {
 		margin-left: 0;
 		margin-right: 0;
@@ -63,18 +62,13 @@
 			}
 
 			position: relative;
-			-webkit-animation: fadein 2s ease-in-out;;
-			-moz-animation:  fadein 2s ease-in-out;;
-		    -webkit-animation-fill-mode: forwards;
-		    -moz-animation-fill-mode: forwards;
-			// -webkit-animation: movein 2s ease-out, fadein 2s ease-in-out;;
-			// -moz-animation: movein 2s ease-out, fadein 2s ease-in-out;;
-		 //    -webkit-animation-fill-mode: forwards, forwards;
-		 //    -moz-animation-fill-mode: forwards, forwards;
+			// -webkit-animation: fadein 2s ease-in-out;;
+			// -moz-animation:  fadein 2s ease-in-out;;
+		 //    -webkit-animation-fill-mode: forwards;
+		 //    -moz-animation-fill-mode: forwards;
 		}
 
 		@media #{$small} {
-			margin-top: -$column-gutter;
 
 			h3 {margin-bottom: $column-gutter;}
 
@@ -93,7 +87,6 @@
 		}
 
 		@media #{$medium} {
-			margin-top: -$column-gutter;
 
 			h1 {margin-bottom: 0;}
 
@@ -103,7 +96,7 @@
 
 				&:after {
 					content: "";
-					padding-top: (622/1320)*100%;
+					padding-top: (565/1200)*100%;
 					display: block;
 					@include opacity(0);
 				}
@@ -111,9 +104,35 @@
 		}
 
 		@media #{$large} {
-			margin-top: -$column-gutter;
 			h3 {margin-bottom: $column-gutter;}
 		}
+
+		.header-slideshow {
+
+			.orbit-container {
+				margin-left: auto;
+			    margin-right: auto;
+			    top: 26px;
+			    max-width: 1091px;
+				.orbit-prev,.orbit-next,.orbit-slide-number,.orbit-timer {
+					display: none;
+				}
+			}
+
+			.orbit-bullets {
+				max-width: 200px;
+				margin: auto;
+				top: 1.5* -$column-gutter;
+				text-align: center;
+
+				li {
+					float: none;
+					display: inline-block;
+				}
+			}
+
+		}
+
 
 	}
 
@@ -229,6 +248,10 @@
 		background: #282a2e;
 		color: $white;
 		h2 {color: $white;}
+
+		img {
+			@include single-box-shadow(black, 0px, 3px, 17px, -6px, false);
+		}
 	}
 
 	.page-content__uspblock_languages {
@@ -239,6 +262,13 @@
 		}
 		float: right;
 		background: $white;
+
+		img {
+			width: 100%;
+			@media #{$small} {
+				width: auto;
+			}
+		}
 	}
 
 	.page-content__uspblock_social {

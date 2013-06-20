@@ -16,10 +16,13 @@
 		text-transform: uppercase;
 
 		a {
-			vertical-align: bottom;
 			@include opacity(0.5);
 			@include transition-property(opacity);
 			@include transition-duration(0.2s);
+
+			img {
+				vertical-align: middle;
+			}
 
 			&:hover {
 				@include opacity(1);
