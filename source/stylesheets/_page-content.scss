@@ -14,6 +14,8 @@
 }
 
 .page-content {
+	margin-left: 0 !important;
+	margin-right: 0 !important;
 
 	.row {
 		margin-left: 0;
@@ -126,6 +128,7 @@
 				position: absolute;
 			}
 		}
+
 		.header-slideshow {
 
 			.orbit-container {
@@ -282,6 +285,7 @@
 
 		img {
 			@include single-box-shadow(black, 0px, 3px, 17px, -6px, false);
+			margin-bottom: $column-gutter;
 		}
 	}
 
@@ -291,6 +295,7 @@
 			max-width: 640px;
 			float: right;
 		}
+		border-top: 1px solid $contentBorderColor;
 		float: right;
 		background: $white;
 
@@ -304,9 +309,22 @@
 		.row {
 			max-width: 640px;
 			float: left;
-			padding-left: 2*$column-gutter;
+			padding-left: $column-gutter;
+			@media #{$small} {
+				padding-left: 2*$column-gutter;
+			}
 		}
 		background: #ebeef3;
+
+		img {
+			left: 5%;
+			top: -20%;
+			@media #{$small} {
+				top: -40%;
+			}
+		    position: absolute;
+		}
+
 	}
 
 	.page-content__uspblock_responsive {
@@ -318,6 +336,18 @@
 			position: relative;
 		}
 
+
+		.page-content__uspblock__image {
+			margin-bottom: $column-gutter;
+			img {
+			   display: block;
+			   margin-left: auto;
+			   margin-right: auto;
+			   position: relative;
+			   width: 75%;
+			}
+		}
+
 		@media #{$small} {
 			.page-content__uspblock__image {
 				position: absolute;
@@ -327,7 +357,16 @@
 
 		@media #{$medium} {
 			.page-content__uspblock__image {
-				bottom: -65px;
+				bottom: 95px;
+				position: absolute;
+				width: gridCalc(8, 12);
+			}
+		}
+		@media #{$medium} {
+			.page-content__uspblock__image {
+				bottom: 25px;
+				position: absolute;
+				width: gridCalc(8, 12);
 			}
 		}
 	}
@@ -346,7 +385,14 @@
 
 		.columns {
 			margin-top: 2*$column-gutter;
-			padding-left: 2*$column-gutter;
+
+			padding-left: $column-gutter;
+			padding-right: $column-gutter;
+			@media #{$small} {
+				padding-left: 0.5*$column-gutter;
+				padding-right: 2*$column-gutter;
+			}
+
 			text-align: center;
 			p {
 				text-align: left;
@@ -363,5 +409,11 @@
 		}
 
 
+	}
+
+	.page-content__uspblock_footer {
+		@extend %uspblock;
+		.row {margin-top: 0;}
+		background: white;
 	}
 }

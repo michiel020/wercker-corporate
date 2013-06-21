@@ -1,8 +1,8 @@
 
 .footer__bar {
 	text-align: center;
+	display: block;
 	background: white;
-
 	padding-top: $column-gutter;
 
 	ul li {
@@ -28,11 +28,6 @@
 }
 
 .footer {
-	max-width: 1280px;
-	margin-left: auto;
-	margin-right: auto;
-	background: white;
-	text-align: center;
 
 	@media #{$small} {
 		text-align: left;
@@ -47,7 +42,11 @@
 			font-size: 0.9em;
 			vertical-align: top;
 		}
-		p {font-size: .8*$base-font-size;}
+		p {
+			font-size: .8*$base-font-size;
+			.icon {margin-right:0.5*$column-gutter}
+		}
+
 		padding: 20px;
 	}
 
