@@ -28,6 +28,16 @@
   <!-- Included CSS Files -->
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:400italic,300,400,600,700' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="/stylesheets/site.css" media="all">
+  <!-- start Mixpanel --><script type="text/javascript">(function(e,b){if(!b.__SV){var a,f,i,g;window.mixpanel=b;a=e.createElement("script");a.type="text/javascript";a.async=!0;a.src=("https:"===e.location.protocol?"https:":"http:")+'//cdn.mxpnl.com/libs/mixpanel-2.2.min.js';f=e.getElementsByTagName("script")[0];f.parentNode.insertBefore(a,f);b._i=[];b.init=function(a,e,d){function f(b,h){var a=h.split(".");2==a.length&&(b=b[a[0]],h=a[1]);b[h]=function(){b.push([h].concat(Array.prototype.slice.call(arguments,0)))}}var c=b;"undefined"!==
+    typeof d?c=b[d]=[]:d="mixpanel";c.people=c.people||[];c.toString=function(b){var a="mixpanel";"mixpanel"!==d&&(a+="."+d);b||(a+=" (stub)");return a};c.people.toString=function(){return c.toString(1)+".people (stub)"};i="disable track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config people.set people.set_once people.increment people.append people.track_charge people.clear_charges people.delete_user".split(" ");for(g=0;g<i.length;g++)f(c,i[g]);
+    b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
+  mixpanel.init("0a761e74a920a4762015b91966058590");</script><!-- end Mixpanel -->
+
+  <script type="text/javascript">
+  mixpanel.track_links(".page-content__signup a", "Click signup button", {'referrer': document.referrer });
+  mixpanel.track_links(".page-content__signup--bottom a", "Bottom signup button", {'referrer': document.referrer });
+  </script>
+
 
 </head>
 <body>
@@ -284,7 +294,7 @@
 	            <li>copyright &copy;2013 wercker</li>
 	<!--             <li><a href="http://beta.wercker.com/about">about</a></li>
 	            <li><a href="http://beta.wercker.com/jobs">jobs</a></li> -->
-	            <li><a href="http://mailto:pleasemailus@wercker.com">contact &amp; support</a></li>
+	            <li><a href="mailto:pleasemailus@wercker.com">contact &amp; support</a></li>
 	            <!-- <li class="footer__label"><span>find us on: </span></li> -->
 		        <li><a href="https://angel.co/wercker"><img src="/images/icon_angellist.jpg" alt="twitter" width="80"/></a></li>
 		        <li><a href="https://twitter.com/wercker"><img src="/images/icon_twitter.jpg" alt="twitter" width="20"/></a></li>
@@ -306,7 +316,7 @@
 		          <hr></hr>
 		          <p>
 		            Feel free to email us with any questions or feedback at <a href="mailto:pleasemailus@wercker.com">pleasemailus@wercker.com</a>.</br>
-		            Subscribe to the wercker blog <a href="/feed.xml">feed</a></br>
+		            Subscribe to the wercker blog <a href="http://blog.wercker.com/feed.xml">feed</a></br>
 		            Follow us on <a href="http://twitter.com/wercker">twitter</a>
 		          </p>
 
@@ -339,5 +349,13 @@
       </div>
     </div>
   </div>
+  <script type="text/javascript">
+  try {
+    var clientPageTracker = _gat._getTracker("UA-28568056-1");
+    clientPageTracker._setDomainName("beta.wercker.com");
+    clientPageTracker._trackPageview();
+    } catch (err) {
+  }
+  </script>
 </body>
 </html>
