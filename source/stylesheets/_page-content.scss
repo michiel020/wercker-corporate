@@ -215,6 +215,12 @@
 		margin-bottom: 0;
 		color: $white;
 		h2 {color: $white;}
+		em {
+			padding-left: 5px;
+			padding-right: 5px;
+			background: rgba(0,0,0,0.3);
+			color: $successColor;
+		}
 		@include background-image(linear-gradient(top, #221f1f 0%, $black 100%));
 
 		.velocity_image {
