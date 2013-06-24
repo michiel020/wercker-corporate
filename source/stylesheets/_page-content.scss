@@ -183,6 +183,7 @@
 		.signup_list {
 			margin-left: auto;
 		    margin-right: auto;
+		    margin-bottom: $column-gutter;
 			text-align: left;
 			font-size: 1.1em;
 			border: 1px solid $contentBorderColor;
@@ -236,6 +237,37 @@
 		}
 
 		overflow: hidden;
+	}
+
+	.page-content__404 {
+		@extend %uspblock;
+		position: relative;
+		h1 {
+			font-size: 10em;
+			margin-bottom: 0;
+			color: $alertColor;
+		}
+
+		.arrow-movedown {
+			margin-bottom: 2*$column-gutter;
+		}
+
+		ul {
+			list-style: none;
+			line-height: 2em;
+			position: relative;
+			z-index: 1
+		}
+
+		&:before {
+	        @extend [class^="icon-"]:before;
+	        @extend .icon-deploy-failed:before;
+	        font-size: 1000px;
+	        position: absolute;
+	        color: rgba(0,0,0,0.02);
+	        right: 20%;
+	        top: -200px;
+	    }
 	}
 
 	.page-content__uspblock_velocity {
