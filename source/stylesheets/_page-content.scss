@@ -16,6 +16,7 @@
 .page-content {
 	margin-left: 0 !important;
 	margin-right: 0 !important;
+	max-width: 1000px;
 
 	.row {
 		margin-left: 0;
@@ -360,6 +361,13 @@
 		}
 	}
 
+	.page-content__uspblock_openplatform {
+		@extend %uspblock;
+		background: $white;
+		color: $black;
+		border-bottom: 1px solid $contentBorderColor;
+	}
+
 	.page-content__uspblock_languages {
 		@extend %uspblock;
 		.row {
@@ -400,13 +408,22 @@
 
 	.page-content__uspblock_responsive {
 		@extend %uspblock;
-		background: #f6f6f6;
+		color: $white;
+		h2 {color:$white;}
 		margin-bottom: 0;
+
+		background-image: image-url("responsive_outside.jpg");
+		background-image: no-repeat;
+		background-size: 100%;
 
 		.row {
 			position: relative;
 		}
 
+		.page-content__uspblock__text {
+			background: rgba(0,0,0,0.5);
+			padding: $column-gutter;
+		}
 
 		.page-content__uspblock__image {
 			margin-bottom: $column-gutter;
