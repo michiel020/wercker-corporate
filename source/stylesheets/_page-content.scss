@@ -272,17 +272,18 @@
 
 	.page-content__uspblock_velocity {
 		@extend %uspblock;
-		background: #3a3535;
+		background: $white;
 		margin-bottom: 0;
-		color: $white;
-		h2 {color: $white;}
+		color: $black;
+		border-bottom: 1px solid $contentBorderColor;
+		// h2 {color: $white;}
 		em {
 			padding-left: 5px;
 			padding-right: 5px;
-			background: rgba(0,0,0,0.3);
-			color: $successColor;
+			background: $successColor;
+			color: $white;
 		}
-		@include background-image(linear-gradient(top, #221f1f 0%, $black 100%));
+		// @include background-image(linear-gradient(top, #221f1f 0%, $black 100%));
 
 		.velocity_image {
 			.velocity_meter {
@@ -330,9 +331,10 @@
 
 	.page-content__uspblock_integrated {
 		@extend %uspblock;
-		background: #fcb543;
-		color: $white;
-		h2 {color: $white;}
+		background: $white;
+		color: $black;
+		border-bottom: 1px solid $contentBorderColor;
+		// h2 {color: $white;}
 
 		.integration_velocity {
 		    text-align:center;
@@ -347,12 +349,13 @@
 
 	.page-content__uspblock_terminalpower {
 		@extend %uspblock;
-		background: #282a2e;
-		color: $white;
-		h2 {color: $white;}
+		background: $white;
+		color: $black;
+		border-bottom: 1px solid $contentBorderColor;
+		// h2 {color: $white;}
 
 		img {
-			@include single-box-shadow(black, 0px, 3px, 17px, -6px, false);
+			// @include single-box-shadow(black, 0px, 3px, 17px, -6px, false);
 			margin-bottom: $column-gutter;
 		}
 	}
