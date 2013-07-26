@@ -224,7 +224,7 @@
 
 	%uspblock {
 		.row {
-			max-width: 1280px;
+			max-width: 1144px;
 			margin-left: auto;
 			margin-right: auto;
 			margin-top: 4*$column-gutter;
@@ -346,6 +346,17 @@
 				margin-right: auto;
 			}
 		}
+	}
+
+	.page-content__uspblock_mix {
+		@extend %uspblock;
+		background: $white;
+		color: $black;
+		margin-top: 0;
+		padding-bottom: 0;
+		.row {padding-bottom: 0;}
+
+		.columns--copy { margin-top: 100px;}
 	}
 
 	.page-content__uspblock_terminalpower {
