@@ -14,6 +14,7 @@
 }
 
 .page-content {
+	background: $white;
 	margin-left: 0 !important;
 	margin-right: 0 !important;
 	max-width: 1000px;
@@ -210,27 +211,31 @@
 	}
 
 	.page-content__signup--bottom {
-		background-color: $white;
-		padding-top: 2*$column-gutter;
+		background-color: #f8f8f8;
+		padding-top: 4*$column-gutter;
 		padding-bottom: 3*$column-gutter;
-		border-top: 1px solid $secondaryColor;
-
+		// border-top: 1px solid $secondaryColor;
 		h3 {margin-bottom: $column-gutter}
 	}
 
 	%uspblock {
 		.row {
-			max-width: 1144px;
+			max-width: 1200px;
 			margin-left: auto;
 			margin-right: auto;
-			margin-top: 4*$column-gutter;
 			padding-bottom: 4*$column-gutter;
 			padding-left: $column-gutter;
 			padding-right: $column-gutter;
 		}
 
 		h2 {
+			font-weight: 200;
+		}
+
+		p {
 			@include opacity(0.8);
+			line-height: 2em;
+			margin-left: .1*$column-gutter;
 		}
 
 		overflow: hidden;
@@ -269,18 +274,19 @@
 
 	.page-content__uspblock_velocity {
 		@extend %uspblock;
-		background: $white;
-		margin-bottom: 0;
-		color: $black;
+		background: $black;
+		padding-top: 80px;
+		margin-bottom: 80px;
+		color: $white;
 		border-bottom: 1px solid $contentBorderColor;
-		// h2 {color: $white;}
+		h2 {color: $white;}
 		em {
 			padding-left: 5px;
 			padding-right: 5px;
 			background: $successColor;
 			color: $white;
 		}
-		// @include background-image(linear-gradient(top, #221f1f 0%, $black 100%));
+		@include background-image(linear-gradient(top, #221f1f 0%, $black 100%));
 
 		.velocity_image {
 			.velocity_meter {
@@ -346,11 +352,18 @@
 		@extend %uspblock;
 		background: $white;
 		color: $black;
-		margin-top: 0;
+		margin-bottom: 80px;
 		padding-bottom: 0;
-		.row {padding-bottom: 0;}
-
-		.columns--copy { margin-top: 100px;}
+		.row {padding-bottom: 40px;}
+		.columns--copy {
+			margin-top: $column-gutter;
+			@media #{$small} {
+				margin-top: 0;
+			}
+			@media #{$medium} {
+				margin-top: 100px;
+			}
+		}
 	}
 
 	.page-content__uspblock_terminalpower {
@@ -425,25 +438,33 @@
 			.orbit-container {
 				margin-left: auto;
 			    margin-right: auto;
+		    	background: $white;
 				.orbit-prev,.orbit-next,.orbit-slide-number,.orbit-timer {
 					display: none;
 				}
 
-				img, object, embed {
-					width: 100%;
-				}
 			}
 
 			.page-content__uspblock__testimonial__text {
-				position: absolute;
-				background: rgba(255,255,255,0.8);
-				margin: 20px;
 				padding: 20px;
 				text-align: center;
 
+				@media #{$small} {
+					background: rgba(255,255,255,0.8);
+					position: absolute;
+					top: 0;
+					margin: 20px;
+				}
+
 				p {
 					color: $black;
-					font-size: 22px;
+
+					@media #{$small} {
+						font-size: 16px;
+					}
+					@media #{$medium} {
+						font-size: 20px;
+					}
 				}
 
 				em {
@@ -488,36 +509,49 @@
 	.page-content__uspblock_responsive {
 		@extend %uspblock;
 		background: $white;
-		color: $white;
-		h2 {color:$white;}
-		margin-bottom: 0;
+		padding: 0 !important;
 
 		.row {
+			margin-bottom: 80px;
+			padding: 0;
 			max-width: 1400px;
-			height: 400px;
-			background-image: image-url("responsive_outside.jpg");
-			background-image: no-repeat;
-
-			background-position: center;
-
-			@media #{$medium} {
-				background-size: 100%;
-			}
 		}
 
-		.page-content__uspblock__text {
-			background: rgba(0,0,0,0.7);
-			@include grid-column(12);
-			@media #{$small} {
-				@include grid-column(6);
-			}
+		.page-content__uspblock__testimonial__text {
+				padding: 20px;
+				text-align: center;
 
-			@media #{$medium} {
-				@include grid-column(4);
-			}
+				@media #{$small} {
+					background: rgba(255,255,255,0.8);
+					position: absolute;
+					top: 20px;
+					margin-left: 20px;
+				}
 
-			padding: $column-gutter !important;
-		}
+				p {
+					color: $black;
+
+					@media #{$small} {
+						font-size: 16px;
+					}
+					@media #{$medium} {
+						font-size: 20px;
+					}
+				}
+
+				em {
+					color: rgba($black, 0.8);
+					font-size: 16px;
+				}
+
+				i {
+					font-size: 2em;
+					color: rgba($black, 0.6);
+					position: relative;
+				    top: 10px;
+				    line-height: 10px;
+				}
+			}
 
 	}
 
