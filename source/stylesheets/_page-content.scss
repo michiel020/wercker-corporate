@@ -452,7 +452,7 @@
 				@media #{$small} {
 					background: rgba(255,255,255,0.8);
 					position: absolute;
-					top: 0;
+					bottom: 0;
 					margin: 20px;
 				}
 
@@ -460,9 +460,11 @@
 					color: $black;
 
 					@media #{$small} {
+						line-height: 26px;
 						font-size: 16px;
 					}
 					@media #{$medium} {
+						line-height: 30px;
 						font-size: 20px;
 					}
 				}
