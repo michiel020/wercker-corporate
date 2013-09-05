@@ -130,7 +130,7 @@
 			<div class="arrow-movedown"><img src="images/move_down@2x.png" alt="move down" width="77px"/></div>
 		</div>
 
-	    <div class="small-12 large-12 columns page-content__uspblock_velocity">
+<!-- 	    <div class="small-12 large-12 columns page-content__uspblock_velocity">
 		    <div class="row">
 
 		        <div class="small-12 large-5 columns">
@@ -146,7 +146,7 @@
 					<img src="images/gauge_meter.png" class="velocity_meter" alt="velocity" width="500px"/>
 				</div>
 	        </div>
-	    </div>
+	    </div> -->
 
 		<div class="small-12 large-12 columns page-content__uspblock_integrated">
 			<div class="row">
@@ -206,9 +206,10 @@
 			</div>
 		</div>
 
-		<div class="small-12 large-12 columns page-content__uspblock_integrated">
+		<div class="small-12 large-12 columns page-content__uspblock_cli">
 			<div class="row">
 		        <div class="small-12 large-5 columns text-center">
+		        	<div class="blinkAnimation"></div>
 					<img src="images/cli.jpg" alt="wercker cli" width="413px"/>
 		        </div>
 		        <div class="small-12 large-6 columns columns--copy">
@@ -217,27 +218,90 @@
 		            As developers ourselves, we spend most our time in the terminal. Wercker comes with a command line interface so you can build and deploy from the comfort of your own terminal.
 		          </p>
 		          <p>
-		            Just run <span class="cli">pip install wercker</span> and you have the <span class="cli">wercker</span> command installed.
+		            Just run <span class="cli">pip install wercker</span> and you have the wercker command installed.
 		          </p>
+				<p class="text-center">
+		          <a href="http://devcenter.wercker.com/articles/cli/" class="button radius button--outline">Read more &raquo;</a>
+		          <a href="https://github.com/wercker/wercker-cli" class="button radius button--outline">Fork me on <i class="icon-github-icon"></i> &raquo;</a>
+			    </p>
 		        </div>
 			</div>
 		</div>
 
-		<div class="small-12 large-12 columns page-content__uspblock_integrated">
+		<div class="small-12 large-12 columns page-content__uspblock_openplatform">
 			<div class="row">
-	            <div class="small-12 large-3 columns columns--copy">
-		          <h2>Open platform</h2>
-		          <p>
-		            Wercker comes with support for Python, Ruby, PHP, Nodejs and Go. But if you're developing for a different stack we enable you to build your own box and pipeline steps for wercker yourself.
-		          </p>
+	            <div class="small-12 large-12 columns">
+			        <h2>Open platform</h2>
+			        <p>
+			            Wercker comes with support for Python, Ruby, PHP, Nodejs and Go.
+			            But if you're developing for a different stack we enable you to build your own <a href="http://devcenter.wercker.com/articles/boxes/">box</a> and <a href="http://devcenter.wercker.com/articles/steps/">pipeline steps</a> for wercker yourself.
+			        </p>
+
+					<div class="row">
+					    <div class="small-12 large-4 columns text-center">
+					        <div class="browse__banner">
+								<div class="meteor">
+						            <div class="browse__label"><div>Featured Box</div></div>
+						            <img class="main__img" src="/images/featured/meteor_logo.png" alt="meteor box" width="200px"/>
+					            </div>
+					        </div>
+							<a href="https://app.wercker.com/#applications/51e09061aabf671f79001c34/tab/details" class="button radius small button--outline">Try this box &raquo;</a>
+				        </div>
+					    <div class="small-12 large-4 columns text-center">
+					        <div class="browse__banner">
+								<div class="scala">
+						           <div class="browse__label"><div>#scala</div></div>
+						            <img class="main__img" src="/images/featured/scala_logo.png" alt="Scala" width="175px"/>
+					            </div>
+					        </div>
+							<a href="https://app.wercker.com/#applications/51a7065ac91d16282d00079c/tab/details" class="button radius small button--outline">Try this box &raquo;</a>
+				        </div>
+					    <div class="small-12 large-4 columns text-center">
+					        <div class="browse__banner">
+								<div class="golang">
+						           <div class="browse__label"><div>#golang</div></div>
+			                        <img class="main__img" src="/images/featured/golang_logo.png" alt="Golang" width="200px"/>
+					            </div>
+					        </div>
+							<a href="https://app.wercker.com/#applications/51a7065ac91d16282d00079c/tab/details" class="button radius small button--outline">Try this box &raquo;</a>
+				        </div>
+					</div>
+
+	  				<div class="text-center">
+			          <a href="https://app.wercker.com/#explore" class="button radius button--outline">Explore all boxes and steps &raquo;</a>
+		            </div>
+
 		        </div>
-		        <div class="small-12 large-8 columns">
-					<img src="images/explore.jpg" alt="wercker explore" width="647"/>
-		        </div>
-			</div>
+	        </div>
+
 		</div>
 
 		<div class="small-12 large-12 columns page-content__uspblock_responsive">
+			<div class="row">
+
+				<div class="small-12 large-12 columns text-center">
+					<img src="images/responsive_devices.jpg" alt="" width="1000">
+				</div>
+				<div class="small-12 large-4 columns text-center">
+					<div><embed src="images/responsive_desktop.svg" type="image/svg+xml" /></div>
+					<h3>Desktop</h3>
+					<p> Praesent lacinia arcu vitae orci accumsan tincidunt. Aliquam elit nisi, condimentum sed massa quis, facilisis sodales urna.</p>
+				</div>
+				<div class="small-12 large-4 columns text-center">
+					<div><embed src="images/responsive_tablet.svg" type="image/svg+xml" /></div>
+					<h3>Tablet</h3>
+					<p> Praesent lacinia arcu vitae orci accumsan tincidunt. Aliquam elit nisi, condimentum sed massa quis, facilisis sodales urna.</p>
+				</div>
+				<div class="small-12 large-4 columns text-center">
+					<div><embed src="images/responsive_phone.svg" type="image/svg+xml" /></div>
+					<h3>Phone</h3>
+					<p> Praesent lacinia arcu vitae orci accumsan tincidunt. Aliquam elit nisi, condimentum sed massa quis, facilisis sodales urna.</p>
+				</div>
+				<hr/>
+			</div>
+		</div>
+
+<!-- 		<div class="small-12 large-12 columns page-content__uspblock_responsive">
 			<div class="row">
 				<img class="show-for-medium-up" src="images/responsive_outside.jpg" />
 				<img class="hide-for-medium-up" src="images/responsive_outside_small.jpg" />
@@ -249,7 +313,7 @@
 					</p>
 				</div>
 			</div>
-		</div>
+		</div> -->
 
 <!-- 		<div class="small-12 large-12 columns page-content__uspblock_integrated">
 			<div class="row">

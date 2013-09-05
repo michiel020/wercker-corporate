@@ -1,0 +1,55 @@
+.browse__banner {
+    border: 1px solid rgba(0,0,0,0.1);
+    padding: 10px;
+    margin-bottom: .5*$column-gutter;
+    overflow: hidden;
+
+    .meteor {
+        height: 155px;
+        background-image:url('/images/featured/meteor.jpg');
+        background-repeat:repeat-y;
+        padding: 20px;
+    }
+
+    .scala {
+        height: 155px;
+        img {
+            margin-top: 15%;
+        }
+        .browse__label div { background: rgba(#bc101d, .8);}
+    }
+
+    .golang {
+        height: 155px;
+        img {
+            margin-top: 15%;
+        }
+        .browse__label div { background: rgba($black, 1);}
+    }
+}
+
+.browse__label {
+    position: absolute;
+    overflow: hidden;
+    $size: 120px;
+    width: $size;
+    height: $size;
+    top: 0;
+    right: 10px;
+
+    div{
+        @include rotate(45deg);
+        width: 1.5*$size;
+        background: rgba(0,0,0,0.5);
+        text-align: center;
+        position: relative;
+        padding: 10px;
+        left: -15px;
+        right: 0;
+        top: 25px;
+
+        color: rgba(255,255,255,1);
+        font-size: 0.9em;
+        font-weight: 600;
+    }
+}

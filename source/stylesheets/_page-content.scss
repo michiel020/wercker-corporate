@@ -2,7 +2,9 @@
 
 .cli {
 	font-family: monaco,Consolas,"Liberation Mono",Courier,monospace;
-	color: #66CD00;
+	color: #009601;
+	background: #121315;
+	padding: 5px;
 }
 
 .name {
@@ -22,6 +24,18 @@
 	.row {
 		margin-left: 0;
 		margin-right: 0;
+	}
+
+	.button--outline {
+		border: 1px solid $black;
+		color: $black;
+		background: transparent;
+	}
+
+	.button--outline:hover {
+		border: 1px solid $black;
+		color: $black;
+		background: rgba(0,0,0,0.05);
 	}
 
 	.arrow-movedown {
@@ -332,38 +346,34 @@
 	    }
 	}
 
+	.page-content__uspblock_cli {
+		@extend %uspblock;
+		background: $white;
+		color: $black;
+
+		.button {
+			margin-right: $column-gutter;
+			i{font-size: 0.9em;}
+		}
+
+		.blinkAnimation {
+			width: 50px;
+			height: 20px;
+			background-color: #121315;
+
+			position: absolute;
+			top: 90%;
+			left: 10%;
+
+			-webkit-animation: blink .5s ease-in-out infinite;
+			-moz-animation: blink .5s ease-in-out infinite;
+		}
+	}
+
 	.page-content__uspblock_integrated {
 		@extend %uspblock;
 		background: $white;
 		color: $black;
-
-		.integration_velocity {
-		    text-align:center;
-			img {
-				margin-top: $column-gutter;
-				display: block;
-				margin-left: auto;
-				margin-right: auto;
-			}
-		}
-	}
-
-	.page-content__uspblock_mix {
-		@extend %uspblock;
-		background: $white;
-		color: $black;
-		margin-bottom: 80px;
-		padding-bottom: 0;
-		.row {padding-bottom: 40px;}
-		.columns--copy {
-			margin-top: $column-gutter;
-			@media #{$small} {
-				margin-top: 0;
-			}
-			@media #{$medium} {
-				margin-top: 100px;
-			}
-		}
 	}
 
 	.page-content__uspblock_terminalpower {
@@ -384,6 +394,7 @@
 		background: $white;
 		color: $black;
 		border-bottom: 1px solid $contentBorderColor;
+		.row .row {padding:$column-gutter 0;}
 	}
 
 	.page-content__uspblock_languages {
@@ -519,43 +530,55 @@
 			max-width: 1400px;
 		}
 
-		.page-content__uspblock__testimonial__text {
-				padding: 20px;
-				text-align: left;
+		img {
+			margin-bottom: 2*$column-gutter;
+		}
 
-				@media #{$small} {
-					background: rgba(255,255,255,0.8);
-					position: absolute;
-					top: 20px;
-					margin-left: 20px;
-				}
+		p {
+			padding: $column-gutter;
+		}
 
-				p {
-					margin-bottom: 0;
-					color: $black;
-					line-height: 1.6em;
+		hr {
+			margin-top: 2*$column-gutter;
+		}
 
-					@media #{$small} {
-						font-size: 16px;
-					}
-					@media #{$medium} {
-						font-size: 20px;
-					}
-				}
+		// .page-content__uspblock__testimonial__text {
+		// 		padding: 20px;
+		// 		text-align: left;
 
-				em {
-					color: rgba($black, 0.8);
-					font-size: 16px;
-				}
+		// 		@media #{$small} {
+		// 			background: rgba(255,255,255,0.8);
+		// 			position: absolute;
+		// 			top: 20px;
+		// 			margin-left: 20px;
+		// 		}
 
-				i {
-					font-size: 2em;
-					color: rgba($black, 0.6);
-					position: relative;
-				    top: 10px;
-				    line-height: 10px;
-				}
-			}
+		// 		p {
+		// 			margin-bottom: 0;
+		// 			color: $black;
+		// 			line-height: 1.6em;
+
+		// 			@media #{$small} {
+		// 				font-size: 16px;
+		// 			}
+		// 			@media #{$medium} {
+		// 				font-size: 20px;
+		// 			}
+		// 		}
+
+		// 		em {
+		// 			color: rgba($black, 0.8);
+		// 			font-size: 16px;
+		// 		}
+
+		// 		i {
+		// 			font-size: 2em;
+		// 			color: rgba($black, 0.6);
+		// 			position: relative;
+		// 		    top: 10px;
+		// 		    line-height: 10px;
+		// 		}
+		// 	}
 
 	}
 
