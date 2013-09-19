@@ -92,6 +92,7 @@
 	}
 
 	.contained-content.android {
+		max-width: 850px;
 		h1 {
 			font-size: 32px;
 			color: $black;
@@ -126,7 +127,8 @@
 		.sub-content {
 			margin-bottom: 2*$column-gutter;
 			border-top: 1px solid $contentBorderColor;
-			padding-top: 40px;
+			padding-top: 2*$column-gutter;
+			padding-right: $column-gutter;
 			h6 {
 				font-size: 20px;
 				font-weight: 200;
@@ -134,11 +136,13 @@
 
 			p{
 				color: $txtColor;
-				line-height: 1.8em;
+				line-height: 1.9em;
+				font-size: 0.9em;
 			}
 
 			ul {
 				list-style: none;
+				font-size: .9em;
 			}
 
 			.icon-arrow {@include rotate(-90deg);}
