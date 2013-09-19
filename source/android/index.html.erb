@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en"> <!--<![endif]-->
+
+<head>
+
+  <meta charset="utf-8" />
+  <!-- Set the viewport width to device width for mobile -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <meta name="description" content="wercker Hosted Continuous Integration and Delivery Platform">
+  <meta name="keywords" content="wercker, continuous delivery, continuous integration, cloud">
+  <meta name="author" content="wercker">
+
+  <title>Welcome to wercker</title>
+
+  <link rel="shortcut icon" href="/images/favicon.ico">
+
+  <!-- Included CSS Files -->
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400italic,300,400,600,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="/stylesheets/site.css" media="all">
+  <!-- start Mixpanel --><script type="text/javascript">(function(e,b){if(!b.__SV){var a,f,i,g;window.mixpanel=b;a=e.createElement("script");a.type="text/javascript";a.async=!0;a.src=("https:"===e.location.protocol?"https:":"http:")+'//cdn.mxpnl.com/libs/mixpanel-2.2.min.js';f=e.getElementsByTagName("script")[0];f.parentNode.insertBefore(a,f);b._i=[];b.init=function(a,e,d){function f(b,h){var a=h.split(".");2==a.length&&(b=b[a[0]],h=a[1]);b[h]=function(){b.push([h].concat(Array.prototype.slice.call(arguments,0)))}}var c=b;"undefined"!==
+    typeof d?c=b[d]=[]:d="mixpanel";c.people=c.people||[];c.toString=function(b){var a="mixpanel";"mixpanel"!==d&&(a+="."+d);b||(a+=" (stub)");return a};c.people.toString=function(){return c.toString(1)+".people (stub)"};i="disable track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config people.set people.set_once people.increment people.append people.track_charge people.clear_charges people.delete_user".split(" ");for(g=0;g<i.length;g++)f(c,i[g]);
+    b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
+  mixpanel.init("0a761e74a920a4762015b91966058590");</script><!-- end Mixpanel -->
+
+  <script type="text/javascript">
+  mixpanel.track_links(".page-content__signup a", "Click signup button", {'referrer': document.referrer });
+  mixpanel.track_links(".page-content__signup--bottom a", "Bottom signup button", {'referrer': document.referrer });
+  </script>
+
+
+</head>
+<body>
+  <script src="/javascripts/lib/jquery.js"></script>
+  <script src="/javascripts/lib/custom.modernizr.js"></script>
+  <script src="/javascripts/lib/foundation/foundation.js"></script>
+  <script src="/javascripts/lib/foundation/foundation.topbar.js"></script>
+  <script src="/javascripts/lib/foundation/foundation.section.js"></script>
+  <script src="/javascripts/lib/foundation/foundation.orbit.js"></script>
+
+  <script>
+    $(function(){
+      $(document).foundation();
+    })
+  </script>
+ <div id="root">
+    <div class="row">
+      <!-- NAVIGATION -->
+      <div class="navigation">
+        <div class="sticky">
+          <nav class="top-bar">
+            <ul class="title-area row hide-for-medium-up">
+              <li class="small-6 columns logo name">
+                  <a href="/#"><img src="/images/logo-x2.png" width="100px" alt="wercker"/></a>
+              </li>
+              <li class="small-6 columns toggle-topbar menu-icon"><a href="#" class="right">
+                <span></span></a>
+              </li>
+            </ul>
+            <section class="top-bar-section">
+              <div class="show-for-medium-up logo left">
+                <a href="/#"><img src="/images/logo_black.png" width="100px" alt="wercker"/></a>
+              </div>
+              <ul class="right">
+                <li><a href="https://app.wercker.com/#explore" target="_blank">Explore wercker</a></li>
+                <li class="divider hide-for-medium-up"></li>
+                <li><a href="http://blog.wercker.com" target="_blank">Blog</a></li>
+                <li class="divider hide-for-medium-up"></li>
+                <li><a href="http://devcenter.wercker.com" target="_blank">Dev Center</a></li>
+                <li class="divider hide-for-medium-up"></li>
+                <li><a href="https://app.wercker.com/users/new" target="_blank">Register</a></li>
+                <li class="divider hide-for-medium-up"></li>
+                <li><a href="" target="_blank" class="show-for-small"><i class="icon-labs_flask"></i> apply for our docker beta <i class="icon-labs_flask"></i></a></li>
+                <li class="divider hide-for-medium-up"></li>
+                <li><a href="https://app.wercker.com/sessions/new" class="signin" target="_blank"><i class="icon-sign-out"></i> Sign in</a></li>
+              </ul>
+            </section>
+          </nav>
+        </div>
+      </div>
+      <div class="row page-content">
+        <div class="contained-content android">
+          <div class="small-12 large-12 columns">
+            <br/>
+            <br/>
+            <br/>
+            <p class="text-center">
+              <img src="/images/wanda.jpg" alt="werkcer &amp; android"/>
+            </p>
+            <h1 class="text-center">Continuous integration for <span>Android</span></h1>
+            <div class="sub-header"> <h5>
+              Now test, build and deploy your Android apps with our wercker <a href="https://app.wercker.com/#applications/523ad801811555d33f0060fc/tab/details">Android box</a>. Sign up for free while in beta.
+            </h5></div>
+
+            <br/>
+
+            <div class="social-share text-center">
+                <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://www.wercker.com/android" data-text="@wercker anounces Android support" data-size="large" data-hashtags="android">Tweet</a>
+                <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+              <!-- Place this tag where you want the share button to render. -->
+              <div class="g-plus" data-action="share" data-width="200" data-height="24" data-href="http://www.wercker.com/android"></div>
+
+              <!-- Place this tag after the last share tag. -->
+              <script type="text/javascript">
+                (function() {
+                  var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+                  po.src = 'https://apis.google.com/js/plusone.js';
+                  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+                })();
+              </script>
+            </div>
+            <div class="text-center"> <a href="https://app.wercker.com/users/new/" class="button radius large secondary">SIGN UP FOR FREE</a> </div>
+
+            <div class="signup_list">
+              <ul>
+                <li class="signup-list__header">WHILE IN BETA</li>
+                <li><i class="icon icon-passed"></i> unlimited free repositories</li>
+                <li><i class="icon icon-passed"></i> 2 concurrent builds</li>
+                <li><i class="icon icon-passed"></i> max 25 minutes per build</li>
+                <li><i class="icon icon-passed"></i> unlimited collaborators</li>
+                <li><i class="icon icon-passed"></i> no credit card required</li>
+              </ul>
+            </div>
+
+          <!--   <div class="flex-video">
+              <iframe src="//player.vimeo.com/video/73947111" width="500" height="313" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+            </div> -->
+          </div>
+
+          <div class="small-12 large-6 columns sub-content">
+            <h6>BLOG</h6>
+            <p>
+              In the coming weeks we will post several tutorials, screencasts and updates on our support for <a href="https://app.wercker.com/#applications/523ad801811555d33f0060fc/tab/details">Android</a>.
+              Including how to automaticly deploy to <a href="https://testflightapp.com/android/">Testflight</a> or <a href="http://hockeyapp.net/features/">Hockey</a>.
+            </p>
+            <p>
+              <i class="icon icon-arrow"></i> <a href="http://blog.wercker.com/2013/09/19/Gettingstarted-with-android-part-1.html">Getting started with Android - part 1</a>
+            </p>
+          </div>
+
+          <div class="small-12 large-6 columns sub-content">
+            <h6>DEVCENTER</h6>
+            <p>
+              Read our in-depth documentation on our Android support.
+              Maybe you feel our android box is missing essential features?
+              Find out below how to make your own boxes and steps.
+            </p>
+            <ul>
+              <li><i class="icon icon-arrow"></i> <a href="http://devcenter.wercker.com">Android build environment</a></li>
+
+              <li><i class="icon icon-arrow"></i> Create your own <a href="http://devcenter.wercker.com/articles/boxes/">Boxes</a> and <a href="http://devcenter.wercker.com/articles/steps/">Steps</a></li>
+
+            </ul>
+          </div>
+          <br/>
+          <br/>
+          <br/>
+        </div>
+        <div class="small-12 large-12 columns">
+          <div class="row">
+            <div class="small-12 large-12 columns text-center page-content__signup--bottom">
+              <h3>Setup your account and start working on your Android apps.</h3>
+              <a href="https://app.wercker.com/users/new" target="_self" class="button radius large secondary">
+                SIGN UP FOR FREE
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="small-12 large-12 left columns page-content__uspblock_end">
+            <h2 class="text-center">Did you know?</h2>
+            <div class="row">
+                <div class="small-12 large-4 columns">
+                    <img src="../images/heroku_logo.png" width="75px"/>
+                    <h3>Heroku add-on</h3>
+                      <p>
+          Wercker has an <a href="https://addons.heroku.com/wercker">add-on</a> available on the Heroku Marketplace. Making <a href="http://devcenter.wercker.com/articles/deployment/heroku.html">deployment</a> to Heroku even more seamless.
+                    </p>
+                    <a href="https://addons.heroku.com/wercker" target="_blank">Heroku marketplace</a>
+                </div>
+                <div class="small-12 large-4 columns">
+                    <img src="../images/devcenter_icon.png" width="75px"/>
+                    <h3>Dev Center</h3>
+          <p>
+          Our rich developer center offers guidance and in-depth tutorials on how to get the most out of wercker.
+                    </p>
+                    <a href="http://devcenter.wercker.com" target="_blank">Dev Center</a>
+                </div>
+                <div class="small-12 large-4 columns end">
+                    <img src="../images/openshift_logo.png" width="75px"/>
+                    <h3>OpenShift</h3>
+          <p>
+          Wercker integrates with Red Hat's OpenShift, a powerful platform-as-a-service to host and scale your applications.
+                    </p>
+                    <a href="http://devcenter.wercker.com/articles/deployment/openshift.html" target="_blank">OpenShift</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="small-12 large-12 columns footer__bar hide-for-medium-up">
+            <ul>
+                <li>copyright &copy;2013 wercker</li>
+    <!--             <li><a href="http://beta.wercker.com/about">about</a></li>
+                <li><a href="http://beta.wercker.com/jobs">jobs</a></li> -->
+                <li><a href="mailto:pleasemailus@wercker.com">contact &amp; support</a></li>
+                <!-- <li class="footer__label"><span>find us on: </span></li> -->
+                <li><a href="https://angel.co/wercker"><img src="/images/icon_angellist.jpg" alt="twitter" width="80"/></a></li>
+                <li><a href="https://twitter.com/wercker"><img src="/images/icon_twitter.jpg" alt="twitter" width="20"/></a></li>
+                <li><a href="https://facebook.com/wercker"><img src="/images/icon_facebook.jpg" alt="facebook" width="20"/></a></li>
+            </ul>
+        </div>
+
+        <div class="small-12 large-12 columns show-for-medium-up page-content__uspblock_footer">
+            <div class="footer row">
+                <div class="large-4 columns footer__block">
+                  <h5><i class="icon icon-feed"></i> Blog</h5>
+                  <hr></hr>
+                  <p><i class="icon icon-pencil"></i><a href="http://blog.wercker.com/2013/08/05/campfire-notifications-for-wercker.html"> Adding Campfire notifications</a></p>
+                  <p><i class="icon icon-pencil"></i><a href="http://blog.wercker.com/2013/08/05/checking-code-coverage-with-gocov.html"> Code coverage with gocov and wercker</a></p>
+                  <p><i class="icon icon-pencil"></i><a href="http://blog.wercker.com/2013/07/10/Golang-on-wercker.html"> Golang with wercker</a></p>
+                </div>
+                <div class="large-6 columns footer__block">
+                  <h5>Join the Conversation</h5>
+                  <hr></hr>
+                    <p>
+                    Feel free to email us with any questions or feedback at <a href="mailto:pleasemailus@wercker.com">pleasemailus@wercker.com</a></br>
+                    Subscribe to the wercker blog <a href="http://blog.wercker.com/feed.xml">feed</a> and follow us on <a href="http://twitter.com/wercker">twitter</a> and <a href="https://plus.google.com/102532039826084442989/posts">Google+</a>.</br>
+                    Visit our <a href="https://groups.google.com/forum/#!forum/wercker">Google Group</a> or chat to us on IRC at <a href="irc://irc.freenode.net/wercker">#wercker</a> on irc.freenode.net</br>
+                    </p>
+                </div>
+                <div class="large-2 columns">
+                  <div class="badge">
+                  <a href="https://app.wercker.com/project/bykey/e21bb28626f9982fea6e48d6e9f7daf2"><img alt="Wercker status" src="https://app.wercker.com/status/e21bb28626f9982fea6e48d6e9f7daf2/m"></a>
+                  </div>
+                  <div>
+                    <ul class="footer__social">
+
+                    </ul>
+                  </div>
+                </div>
+                <div class="large-12 columns footer__bar">
+                  <ul>
+                    <li>copyright &copy;2013 wercker</li>
+    <!--                <li><a href="http://beta.wercker.com/about">about</a></li>
+                    <li><a href="http://beta.wercker.com/jobs">jobs</a></li> -->
+                    <li><a href="mailto:pleasemailus@wercker.com">contact &amp; support</a></li>
+                    <!-- <li class="footer__label"><span>find us on: </span></li> -->
+                    <li><a href="https://angel.co/wercker"><img src="/images/icon_angellist.jpg" alt="twitter" width="80"/></a></li>
+                    <li><a href="https://twitter.com/wercker"><img src="/images/icon_twitter.jpg" alt="twitter" width="20"/></a></li>
+                    <li><a href="https://facebook.com/wercker"><img src="/images/icon_facebook.jpg" alt="facebook" width="20"/></a></li>
+                    <li><a href="https://plus.google.com/b/102532039826084442989/102532039826084442989/posts"><img src="/images/icon_google_plus.jpg" alt="google+" width="59"/></a></li>
+                  </ul>
+                </div>
+            </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-28568056-1']);
+  _gaq.push(['_setDomainName', 'wercker.com']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</body>
+</html>

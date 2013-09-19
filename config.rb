@@ -20,6 +20,7 @@ require "zurb-foundation"
 # With no layout
 page "/index.html", :layout => false
 page "/docker/index.html", :layout => false
+page "/android/index.html", :layout => false
 #
 # With alternative layout
 # page "/path/to/file.html", :layout => :otherlayout
