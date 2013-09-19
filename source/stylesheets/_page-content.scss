@@ -91,6 +91,60 @@
 		margin: 0 auto;
 	}
 
+	.contained-content.android {
+		h1 {
+			font-size: 32px;
+			color: $black;
+			font-weight: 200;
+			margin-bottom: 0;
+			span{
+				font-weight: 400;
+				color:#A6C446;
+			}
+		}
+
+		h5 {
+			font-size: 18px;
+			line-height: 1.8em;
+			margin-left: auto;
+			margin-right: auto;
+			color: $txtColor;
+			font-weight: 200;
+			max-width: 460px;
+		}
+
+		.signup_list {
+			font-size: 0.9em;
+			width: 260px;
+			margin-bottom: 4*$column-gutter;
+		}
+
+		.social-share {
+			margin-bottom: 2*$column-gutter;
+		}
+
+		.sub-content {
+			margin-bottom: 2*$column-gutter;
+			border-top: 1px solid $contentBorderColor;
+			padding-top: 40px;
+			h6 {
+				font-size: 20px;
+				font-weight: 200;
+			}
+
+			p{
+				color: $txtColor;
+				line-height: 1.8em;
+			}
+
+			ul {
+				list-style: none;
+			}
+
+			.icon-arrow {@include rotate(-90deg);}
+		}
+	}
+
 	.arrow-movedown {
 		position: relative;
 	 	z-index: 10;
@@ -245,36 +299,36 @@
 			margin-bottom: $column-gutter;
 		}
 
-		.signup_list {
-			margin-left: auto;
-		    margin-right: auto;
-		    margin-bottom: $column-gutter;
-			text-align: left;
-			font-size: 1.1em;
-			border: 1px solid $contentBorderColor;
-			max-width: 350px;
-			ul {
-				list-style: none;
-				margin-bottom: 0;
-				li {
-					padding: 0.5*$column-gutter;
-					border-top: 1px solid $contentBorderColor;
-					&.signup-list__header {
-						background: $black;
-						color: $white;
-						border-top: none;
-						text-align: center;
-					}
+	}
 
+	.signup_list {
+		margin-left: auto;
+	    margin-right: auto;
+	    margin-bottom: $column-gutter;
+		text-align: left;
+		font-size: 1.1em;
+		border: 1px solid $contentBorderColor;
+		max-width: 350px;
+		ul {
+			list-style: none;
+			margin-bottom: 0;
+			li {
+				padding: 0.5*$column-gutter;
+				border-top: 1px solid $contentBorderColor;
+				&.signup-list__header {
+					background: $black;
+					color: $white;
+					border-top: none;
+					text-align: center;
 				}
-			}
 
-			.icon-passed {
-				color: $successColor;
-				margin-right: 0.5*$column-gutter;
 			}
 		}
 
+		.icon-passed {
+			color: $successColor;
+			margin-right: 0.5*$column-gutter;
+		}
 	}
 
 	.page-content__signup--bottom {
