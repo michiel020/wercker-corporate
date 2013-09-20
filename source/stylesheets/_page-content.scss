@@ -107,15 +107,19 @@
 				color: #6A88B6;
 			}
 		}
-
-		h5 {
-			font-size: 18px;
-			line-height: 1.8em;
-			margin-left: auto;
-			margin-right: auto;
-			color: $txtColor;
-			font-weight: 200;
-			max-width: 460px;
+		.sub-header {
+			h5 {
+				font-size: 18px;
+				line-height: 1.8em;
+				margin-left: auto;
+				margin-right: auto;
+				color: $txtColor;
+				font-weight: 200;
+				max-width: 460px;
+			}
+		}
+		.sub-header.php {
+			h5 {max-width: 430px;}
 		}
 
 		.signup_list {
@@ -125,7 +129,7 @@
 		}
 
 		.social-share {
-			margin-bottom: 2*$column-gutter;
+			margin-bottom: $column-gutter;
 		}
 
 		.sub-content {
