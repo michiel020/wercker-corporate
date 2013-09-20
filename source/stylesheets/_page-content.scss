@@ -91,7 +91,7 @@
 		margin: 0 auto;
 	}
 
-	.contained-content.android {
+	.contained-content.android, .contained-content.php {
 		max-width: 850px;
 		h1 {
 			font-size: 32px;
@@ -101,6 +101,10 @@
 			span{
 				font-weight: 400;
 				color:#A6C446;
+			}
+
+			.php-color {
+				color: #6A88B6;
 			}
 		}
 
