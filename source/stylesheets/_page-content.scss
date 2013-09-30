@@ -158,6 +158,10 @@
 			ul {
 				list-style: none;
 				font-size: .9em;
+
+				li {
+					margin-bottom: .25*$column-gutter;
+				}
 			}
 
 			.icon-arrow {@include rotate(-90deg);}
@@ -192,6 +196,19 @@
 				}
 			}
 		}
+	}
+
+
+	.button--outline {
+		border: 1px solid $black;
+		color: $black;
+		background: transparent;
+	}
+
+	.button--outline:hover {
+		border: 1px solid $black;
+		color: $black;
+		background: rgba(0,0,0,0.05);
 	}
 
 	.arrow-movedown {
