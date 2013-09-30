@@ -91,7 +91,7 @@
 		margin: 0 auto;
 	}
 
-	.contained-content.android, .contained-content.php {
+	.contained-content.android, .contained-content.php, .contained-content.ruby {
 		max-width: 850px;
 		h1 {
 			font-size: 32px;
@@ -105,6 +105,10 @@
 
 			.php-color {
 				color: #6A88B6;
+			}
+
+			.ruby-color {
+				color: #BF2520;
 			}
 		}
 		.sub-header {
@@ -120,6 +124,9 @@
 		}
 		.sub-header.php {
 			h5 {max-width: 430px;}
+		}
+		.sub-header.ruby {
+			h5 {max-width: 360px;}
 		}
 
 		.signup_list {
@@ -154,6 +161,36 @@
 			}
 
 			.icon-arrow {@include rotate(-90deg);}
+		}
+
+		.steps {
+			h6 {
+				color: $txtColor;
+			}
+			margin-bottom: 2*$column-gutter;
+			.steps__banner {
+				text-align: center;
+				.steps__banner__img {
+					padding-top: $column-gutter;
+					overflow: hidden;
+					border: 1px solid $contentBorderColor;
+					height: 150px;
+					@media #{$small} {
+						height: 110px;
+					}
+					background: $white;
+					margin-bottom: $column-gutter;
+
+					span {
+						position: absolute;
+						left: 1.5*$column-gutter;
+						line-height: 1.2*$baseFontSize;
+						text-transform: uppercase;
+						font-weight: 200;
+					}
+
+				}
+			}
 		}
 	}
 
