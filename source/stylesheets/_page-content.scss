@@ -91,7 +91,7 @@
 		margin: 0 auto;
 	}
 
-	.contained-content.android, .contained-content.php, .contained-content.ruby {
+	.contained-content.android, .contained-content.php, .contained-content.ruby, .contained-content.java {
 		max-width: 850px;
 		h1 {
 			font-size: 32px;
@@ -106,9 +106,11 @@
 			.php-color {
 				color: #6A88B6;
 			}
-
 			.ruby-color {
 				color: #BF2520;
+			}
+			.java-color {
+				color: #e82d2e;
 			}
 		}
 		.sub-header {
