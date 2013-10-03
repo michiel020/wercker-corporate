@@ -25,6 +25,7 @@ page "/php/index.html", :layout => false
 page "/ruby/index.html", :layout => false
 page "/java/index.html", :layout => false
 page "/nodejs/index.html", :layout => false
+page "/python/index.html", :layout => false
 #
 # With alternative layout
 # page "/path/to/file.html", :layout => :otherlayout

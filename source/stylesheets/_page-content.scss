@@ -91,7 +91,7 @@
 		margin: 0 auto;
 	}
 
-	.contained-content.android, .contained-content.php, .contained-content.ruby, .contained-content.java, .contained-content.node {
+	.contained-content.android, .contained-content.php, .contained-content.ruby, .contained-content.java, .contained-content.node, .contained-content.python {
 		max-width: 850px;
 		h1 {
 			font-size: 32px;
@@ -114,6 +114,9 @@
 			}
 			.node-color {
 				color: #90c741;
+			}
+			.python-color {
+				color: #366e9c;
 			}
 		}
 		.sub-header {
