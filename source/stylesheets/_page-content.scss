@@ -562,6 +562,14 @@
 		}
 	}
 
+	.page-content__uspblock_openplatform {
+		@extend %uspblock;
+		background: $white;
+		color: $black;
+		border-bottom: 1px solid $contentBorderColor;
+		.row .row {padding:$column-gutter 0;}
+	}
+
 	.page-content__uspblock_integrated {
 		@extend %uspblock;
 		background: $white;
@@ -596,18 +604,6 @@
 		}
 	}
 
-	.page-content__uspblock_terminalpower {
-		@extend %uspblock;
-		background: $white;
-		color: $black;
-		border-bottom: 1px solid $contentBorderColor;
-		// h2 {color: $white;}
-
-		img {
-			// @include single-box-shadow(black, 0px, 3px, 17px, -6px, false);
-			margin-bottom: $column-gutter;
-		}
-	}
 
 	.page-content__uspblock_openplatform {
 		@extend %uspblock;
