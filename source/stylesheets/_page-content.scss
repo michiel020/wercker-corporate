@@ -2,7 +2,9 @@
 
 .cli {
 	font-family: monaco,Consolas,"Liberation Mono",Courier,monospace;
-	color: #66CD00;
+	color: #009601;
+	background: #121315;
+	padding: 5px;
 }
 
 .name {
@@ -532,6 +534,32 @@
 	        top: -150px;
 
 	    }
+	}
+
+	.page-content__uspblock_cli {
+		@extend %uspblock;
+		background: $white;
+		color: $black;
+
+		.button {
+			@media #{$small} {
+				margin-right: .5*$column-gutter;
+			}
+			i{font-size: 0.9em;}
+		}
+
+		.blinkAnimation {
+			width: 20px;
+			height: 16px;
+			background-color: #121315;
+
+			position: absolute;
+			top: 90%;
+			left: 20px;
+
+			-webkit-animation: blink .5s ease-in-out infinite;
+			-moz-animation: blink .5s ease-in-out infinite;
+		}
 	}
 
 	.page-content__uspblock_integrated {
