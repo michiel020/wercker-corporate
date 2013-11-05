@@ -427,7 +427,7 @@
 			max-width: 1200px;
 			margin-left: auto;
 			margin-right: auto;
-			padding-bottom: 140px;
+			padding-bottom: 80px;
 			padding-left: $column-gutter;
 			padding-right: $column-gutter;
 		}
@@ -538,6 +538,7 @@
 
 	.page-content__uspblock_cli {
 		@extend %uspblock;
+		padding-bottom: 0;
 		background: $white;
 		color: $black;
 
@@ -578,7 +579,7 @@
 		.integration_velocity {
 		    text-align:center;
 			img {
-				margin-top: $column-gutter;
+				margin-bottom: $column-gutter;
 				display: block;
 				margin-left: auto;
 				margin-right: auto;

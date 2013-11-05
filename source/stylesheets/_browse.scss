@@ -1,0 +1,27 @@
+.browse__banner {
+    border: 1px solid rgba(0,0,0,0.1);
+    margin-bottom: .5*$column-gutter;
+    overflow: hidden;
+
+    .meteor {
+        height: 155px;
+        background-image:url('/images/featured/meteor.jpg');
+        background-repeat:repeat-y;
+        padding: 20px;
+    }
+
+    .riak {
+        height: 155px;
+        background-image:url('/images/featured/riak_pattern.png');
+        img {
+            margin-top: 10%;
+        }
+    }
+
+    .windows {
+        height: 155px;
+        img {
+            margin-top: 3%;
+        }
+    }
+}
