@@ -91,6 +91,11 @@
 	.contained-content {
 		max-width: 750px;
 		margin: 0 auto;
+
+		ul {
+			list-style-position:inside;
+			line-height: 26px;
+		}
 	}
 
 	.contained-content.android, .contained-content.php, .contained-content.ruby, .contained-content.java, .contained-content.node, .contained-content.python {
