@@ -6,6 +6,8 @@ ruby "1.9.3"
 
 gem "middleman", "~>3.0.13"
 gem "middleman-livereload"
+gem "middleman-minify-html"
+gem "middleman-smusher"
 gem "rack-contrib"
 gem "zurb-foundation", "4.1.2"
 gem "redcarpet"
